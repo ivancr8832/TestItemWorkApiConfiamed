@@ -1,0 +1,6 @@
+@ItemWorks.Api_HostAddress = http://localhost:5038
+
+GET {{ItemWorks.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
