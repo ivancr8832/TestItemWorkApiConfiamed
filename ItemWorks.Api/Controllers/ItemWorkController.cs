@@ -1,10 +1,12 @@
 ﻿using ItemWorks.Api.Application.Core.Application.ItemWorks.Command;
 using ItemWorks.Api.Application.Core.Application.ItemWorks.Queries;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ItemWorks.Api.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class ItemWorkController : ControllerBase
